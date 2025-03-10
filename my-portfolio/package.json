@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "./deploy.sh",
     "preview": "vite preview"
   },
   "dependencies": {
