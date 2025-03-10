@@ -13,6 +13,7 @@ cd dist
 # echo 'www.example.com' > CNAME
 
 git init
+git branch -m gh-pages
 git add -A
 git commit -m 'deploy'
 
@@ -20,6 +21,7 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git main
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:eshwarsai03394/eshwarsai.github.io.git main:gh-pages
+git push -f git@github.com:eshwarsai03394/eshwarsai.github.io.git gh-pages
+# git subtree push --prefix dist origin gh-pages
 
 cd -
