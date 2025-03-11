@@ -1,44 +1,26 @@
 <template>
   <div class="home-container">
-    <!-- <nav class="navbar">
+    <nav class="navbar">
       <div class="logo">Developer</div>
 
-      <div class="hamburger" @click="toggleMenu">
-        &#9776;
-      </div>
+      <div class="hamburger" @click="toggleMenu">&#9776;</div>
 
-      <ul :class="['nav-links', { 'active': isMenuOpen }]">
-        <li><router-link to="/" class="active">Home</router-link></li>
+      <ul :class="['nav-links', { active: isMenuOpen }]">
+        <li><router-link to="/">Home</router-link></li>
         <li><router-link to="/about">About</router-link></li>
         <li><a href="#">Services</a></li>
         <li><a href="#">Portfolio</a></li>
         <li><a href="#">Contact Me</a></li>
         <button class="case-studies-btn">Tech Blogs</button>
       </ul>
-      
-    </nav> -->
-
-    <div class="content">
-      <div class="text-section">
-        <p class="intro">HI THERE 👋 I'M</p>
-        <h1>Eshwar Sai Gamidi</h1>
-        <p class="role">Software Engineer + Fullstack DEVELOPER 👨‍💻</p>
-        <p class="description">
-          I'm a professional UI/UX designer with front-end development skills based in Lagos.
-        </p>
-        <button class="hire-btn">Contact Me</button>
-      </div>
-
-      <div class="image-section">
-        <img src="../assets/memoji.jpeg" alt="Memoji Character" class="avatar" />
-      </div>
-    </div>
+    </nav>
+      <router-view />
   </div>
 </template>
 
 <script>
 export default {
-  name: "Home",
+  name: "Navbar",
   data() {
     return {
       isMenuOpen: false,
@@ -53,7 +35,7 @@ export default {
 </script>
 
 <style scoped>
-/* General Styles */
+/* Add your Navbar styles here */
 .home-container {
   height: 100vh;
   width: 100vw;
@@ -266,5 +248,4 @@ h1 {
     font-size: 1rem;
   }
 }
-
 </style>
